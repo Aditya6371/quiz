@@ -4,7 +4,9 @@ class Answers extends StatelessWidget {
   Answers(
     this.ans,
     this.anstext,
+    this.score,
   );
+  final int score;
   final VoidCallback ans;
   final String anstext;
   @override

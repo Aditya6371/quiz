@@ -22,7 +22,7 @@ class Quiz extends StatelessWidget {
         ...(question[qindex]['atext'] as List<Map<String, Object>>)
             .map((atext) {
           return Answers(() => anschoosen(atext['score'] as int),
-              atext['text'].toString());
+              atext['text'].toString(),atext['score']as int);
         })
       ],
     );
